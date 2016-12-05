@@ -17,18 +17,50 @@ public class homeController {
 
     SocketIOServer socketIOServer = null;
 
-    @RequestMapping(value = "/livePodcast")
-    public String connect(){
+    @RequestMapping(value = "/home_page")
+    public String getHome(){
 
-
-//        Configuration configuration = new Configuration();
-//        configuration.setHostname("developers-iuhelp.herokuapp.com");
-//        configuration.setPort(8085);
-//
-//        socketIOServer = new SocketIOServer(configuration);
-
-
-
-        return "home";
+        return "home_page";
     }
+
+    @RequestMapping(value = "/discover")
+    public String getDiscover(){
+
+        return "discover";
+    }
+
+    @RequestMapping(value = "/feedback")
+    public String feedback(){
+
+        return "feedback";
+    }
+
+    @RequestMapping(value = "/about_us")
+    public String getAboutUS(){
+
+        return "about_us";
+    }
+
+    @RequestMapping(value = "/live")
+    public String getLiveFeeds(){
+
+        return "live";
+    }
+
+
+    @RequestMapping(value = "/profile")
+    public String getProfile(){
+
+        return "profile";
+    }
+
+
+    @RequestMapping(value = "/log_in")
+    public String getLogin(){
+
+        return "log_in";
+    }
+
+
+
 }
