@@ -56,41 +56,51 @@
     </div>
 </nav>
 <!--end:navbar-->
+  
 
 <!-- start of div:container the scrolling part -->
-<div id ="content_of_page" class="container-fluid">
-  <div id = "overview" class="panel panel-default">
-    <div id="description_heading" class="panel-heading">Feedback</div>
-    <div id="form_elements" class="panel-body">
-      <form name="project_form" id="project_form" class="form-horizontal" action="/feedback" enctype="multipart/form-data" method="POST">
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="name">Full Name:</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" placeholder="Enter full name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="email">Email:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Enter email address">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="feedback">Feedback:</label>
-          <div class="col-sm-10">
-            <textarea class="form-control" rows="5" id="feedback"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-         <div class="col-sm-offset-2 col-sm-10">
-         		<button type="submit" name="continue" value="continue" id="continue" class="btn btn-primary">  Submit </button>
-         </div>
-        </div>
-     </form>
-    </div>
-  </div>
-<!--end:feedback-->
+<div id ="content_of_page" class="container-fluid" >
 
+
+  <!-- start:form -->
+
+   <div id="single_ticket" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <p> Seems like you are not logged in currently. Please login to view the content </p>
+
+   </div>
+  <!-- log in -->
+
+          <div id="single_ticket" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div id="overview" class="panel panel-default">
+                <div id="description_heading" class="panel-heading">Login</div>
+                    <div id="description_content" class="panel-body">
+
+              	        <form name="project_form" id="project_form" action="/loginUser" enctype="multipart/form-data" method="POST">
+
+                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+                        <label for="userid">User ID</label>
+                        <input type="userid" name="userid" class="form-control" id="userid" placeholder="Enter Your userid" required="true">
+                      </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <label for="password">Password</label>
+                        <input type="password"	name="password" class="form-control" id="password" placeholder="Enter Your Password" required="true">
+                    </div>
+
+                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                     		<button type="submit" name="continue" value="continue" id="continue" class="btn btn-primary">  Login </button>
+                     </div>
+
+               </form>
+              </div>
+            </div>
+        </div>
+
+
+  <!-- end: form-->
 
   <footer>
   <hr>
