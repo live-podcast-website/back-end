@@ -59,6 +59,8 @@
 
 <!-- start of div:container the scrolling part -->
 <div id ="content_of_page" class="container-fluid">
+
+    <p>  Your Feedback has been submitted to us. </p>
   <div id = "overview" class="panel panel-default">
     <div id="description_heading" class="panel-heading">Feedback</div>
     <div id="form_elements" class="panel-body">
