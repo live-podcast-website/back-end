@@ -96,8 +96,7 @@
 
 
 
-  <footer>
-  <hr>
+  <footer id="footer_page" class="footer navbar-fixed-bottom">
     References: <a href="https://www.indiana.edu/">Indiana University Website</a>
   </footer>
 
